@@ -1,0 +1,98 @@
+@startuml
+
+    Class User {
+        id: int
+        name: varchar [250]
+        gender: enum MALE, FEMALE, OTHER
+        email: varchar[50]
+        phone: varcher [20]
+        role_id: int
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Class Role {
+        id: int
+        name: varchar [250]
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Class Feature {
+        id: int
+        parent_feature_id: int
+        name: varchar [250]
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Class Role_Feature {
+        role_id: int
+        feature_id: int
+    }
+    
+    Class Client {
+        id: int
+        name: varchar [250]
+        birthdate: datetime
+        gender: enum MALE, FEMALE, OTHER
+        client_type: enum PERSONAL, CORPORATE
+        document: varchar [50]
+        email: varchar[50]
+        phone: varcher [20]
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Class Address {
+        client_id: int
+        address_1: varchar [250]
+        address_2: varchar [250]
+        zipcode: varchar [10]
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Class Document {
+        id: int
+        client_id: int
+        image_url: varchar [250]
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Class Account {
+        id: int
+        account_type: enum CURRENT, SAVINGS
+        client_id: int
+        balance: decimal
+        created_at: datetime
+        updated_at: datetime
+        created_by_user: int
+        updated_by_user: int
+    }
+
+    Role ||..|{ Role_Feature : role_id >
+    Feature ||..|{ Role_Feature : feature_id >
+    Role ||..|{ User : user_id <
+    Feature ||..o{ Feature : parent_feature_id >
+
+    User ||..o{ User : created_by_user\n update_by_user\n >
+
+    Client ||..|{ Address : client_id >
+    Client ||..|{ Document : client_id >
+    Account }o..|| Client : client_id <
+
+@enduml
