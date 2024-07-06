@@ -67,6 +67,7 @@
         id: int
         client_id: int
         image_url: varchar [250]
+        status: enum PENDING | APPROVED | REJECTED
         created_at: datetime
         updated_at: datetime
         created_by_user: int
@@ -87,7 +88,7 @@
     Class Account_Credential {
         id: int
         account_id: int
-        secret_hash: varchar (64)
+        secret_hash: varchar [64]
         attempts: tinyint
         status: enum VALID | EXPIRED | BLOCKED        
         created_at: datetime
@@ -106,7 +107,7 @@
 
     Class Device {
         id: int
-        footprint_hash: varchar (64)
+        footprint_hash: varchar [64]
         created_at: datetime
     }
 
@@ -120,5 +121,9 @@
     Client ||..|{ Address : client_id >
     Client ||..|{ Document : client_id >
     Account }o..|| Client : client_id <
+
+    Account ||..|{ Device : account_id >
+    Account ||..|{ Account_Credential : account_id >
+    Account ||..o{ Account_Session : account_id >
 
 @enduml
