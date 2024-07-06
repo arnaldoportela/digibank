@@ -1,6 +1,6 @@
 ﻿using Microsoft.OpenApi.Models;
 
-namespace Account_MS.Configurations;
+namespace DigiBank.MS.Account.API.Configurations;
 
 public static class SwaggerConfig
 {

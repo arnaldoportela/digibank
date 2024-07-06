@@ -2,9 +2,9 @@
 using System.Text.Json.Serialization;
 using System.Text.Json;
 using Microsoft.Extensions.Options;
-using Account_MS.Converters;
+using DigiBank.MS.Account.API.Converters;
 
-namespace Account_MS.Configurations;
+namespace DigiBank.MS.Account.API.Configurations;
 
 public static class MVCConfig
 {

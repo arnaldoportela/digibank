@@ -1,4 +1,4 @@
-using Account_MS.Configurations;
+using DigiBank.MS.Account.API.Configurations;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +10,7 @@ builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddMVCConfig();
 builder.Services.AddSwaggerConfig();
+builder.Services.AddApiVersioningConfig();
 
 var app = builder.Build();
 
