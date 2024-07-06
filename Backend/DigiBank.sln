@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35013.160
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Account_MS.API", "Account-MS\Account_MS.API.csproj", "{ABE72941-B3F7-48F3-BD36-C4EFB5F982AD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DigiBank.MS.Account", "DigiBank.MS.Account", "{311C2008-60D2-4C68-9E13-2C4C6B19BFB3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account_MS", "Account_MS", "{311C2008-60D2-4C68-9E13-2C4C6B19BFB3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DigiBank.NuGet", "DigiBank.NuGet", "{37E90BF2-0526-4885-B7E3-B63FFA299D51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiBank.MS.Account.API", "DigiBank.MS.Account\DigiBank.MS.Account.API\DigiBank.MS.Account.API.csproj", "{8C16C511-FC0A-41E0-A4FC-9341021F3BA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiBank.NuGet.API", "DigiBank.NuGet\DigiBank.API\DigiBank.API\DigiBank.NuGet.API.csproj", "{795291EE-4977-44C1-B55C-D7B352F6E72B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +17,21 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ABE72941-B3F7-48F3-BD36-C4EFB5F982AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ABE72941-B3F7-48F3-BD36-C4EFB5F982AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ABE72941-B3F7-48F3-BD36-C4EFB5F982AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ABE72941-B3F7-48F3-BD36-C4EFB5F982AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C16C511-FC0A-41E0-A4FC-9341021F3BA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C16C511-FC0A-41E0-A4FC-9341021F3BA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C16C511-FC0A-41E0-A4FC-9341021F3BA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C16C511-FC0A-41E0-A4FC-9341021F3BA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{ABE72941-B3F7-48F3-BD36-C4EFB5F982AD} = {311C2008-60D2-4C68-9E13-2C4C6B19BFB3}
+		{8C16C511-FC0A-41E0-A4FC-9341021F3BA0} = {311C2008-60D2-4C68-9E13-2C4C6B19BFB3}
+		{795291EE-4977-44C1-B55C-D7B352F6E72B} = {37E90BF2-0526-4885-B7E3-B63FFA299D51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8EC1D6F3-457F-4CA5-85E8-DAABA32934FE}

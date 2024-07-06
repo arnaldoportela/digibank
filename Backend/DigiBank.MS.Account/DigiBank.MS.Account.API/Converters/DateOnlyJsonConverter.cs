@@ -1,7 +1,7 @@
 ﻿using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace Account_MS.Converters;
+namespace DigiBank.MS.Account.API.Converters;
 
 public sealed class DateOnlyJsonConverter : JsonConverter<DateOnly>
 {
