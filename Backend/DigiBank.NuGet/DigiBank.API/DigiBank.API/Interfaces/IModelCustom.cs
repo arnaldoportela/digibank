@@ -7,10 +7,11 @@ using System.Threading.Tasks;
 
 namespace DigiBank.NuGet.API.Interfaces;
 
-public interface IModelCustom
+public interface IModelCustom<TResponse>
+    where TResponse : IHttpResponse
 {
-    IReadOnlyList<dynamic> Items { get; set; }
-    dynamic Item { get; set; }
+    IReadOnlyList<TResponse> Items { get; set; }
+    TResponse? Item { get; set; }
     bool IsReturnMessage { get; set; }
     String Message { get; set; }
     bool IsPagination { get; set; }

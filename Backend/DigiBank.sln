@@ -9,7 +9,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DigiBank.NuGet", "DigiBank.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiBank.MS.Account.API", "DigiBank.MS.Account\DigiBank.MS.Account.API\DigiBank.MS.Account.API.csproj", "{8C16C511-FC0A-41E0-A4FC-9341021F3BA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiBank.NuGet.API", "DigiBank.NuGet\DigiBank.API\DigiBank.API\DigiBank.NuGet.API.csproj", "{795291EE-4977-44C1-B55C-D7B352F6E72B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiBank.NuGet.API", "DigiBank.NuGet\DigiBank.API\DigiBank.API\DigiBank.NuGet.API.csproj", "{795291EE-4977-44C1-B55C-D7B352F6E72B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DigiBank.NuGet.Domain", "DigiBank.NuGet\DigiBank.NuGet.Domain\DigiBank.NuGet.Domain\DigiBank.NuGet.Domain.csproj", "{4A07B7C3-8A2F-423C-AEA3-A5533F7D0C97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DigiBank.MS.Account.Service", "DigiBank.MS.Account\DigiBank.MS.Account.Service\DigiBank.MS.Account.Service\DigiBank.MS.Account.Service.csproj", "{6C073DA7-A39C-401A-9F50-F06F1052E7FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,6 +29,14 @@ Global
 		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{795291EE-4977-44C1-B55C-D7B352F6E72B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A07B7C3-8A2F-423C-AEA3-A5533F7D0C97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A07B7C3-8A2F-423C-AEA3-A5533F7D0C97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A07B7C3-8A2F-423C-AEA3-A5533F7D0C97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A07B7C3-8A2F-423C-AEA3-A5533F7D0C97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C073DA7-A39C-401A-9F50-F06F1052E7FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C073DA7-A39C-401A-9F50-F06F1052E7FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C073DA7-A39C-401A-9F50-F06F1052E7FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C073DA7-A39C-401A-9F50-F06F1052E7FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +44,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{8C16C511-FC0A-41E0-A4FC-9341021F3BA0} = {311C2008-60D2-4C68-9E13-2C4C6B19BFB3}
 		{795291EE-4977-44C1-B55C-D7B352F6E72B} = {37E90BF2-0526-4885-B7E3-B63FFA299D51}
+		{4A07B7C3-8A2F-423C-AEA3-A5533F7D0C97} = {37E90BF2-0526-4885-B7E3-B63FFA299D51}
+		{6C073DA7-A39C-401A-9F50-F06F1052E7FF} = {311C2008-60D2-4C68-9E13-2C4C6B19BFB3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8EC1D6F3-457F-4CA5-85E8-DAABA32934FE}
