@@ -20,4 +20,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\DigiBank.NuGet\DigiBank.API\DigiBank.API\DigiBank.NuGet.API.csproj" />
+    <ProjectReference Include="..\..\DigiBank.NuGet\DigiBank.NuGet.Domain\DigiBank.NuGet.Domain\DigiBank.NuGet.Domain.csproj" />
+    <ProjectReference Include="..\DigiBank.MS.Account.Service\DigiBank.MS.Account.Service\DigiBank.MS.Account.Service.csproj" />
+  </ItemGroup>
+
 </Project>
